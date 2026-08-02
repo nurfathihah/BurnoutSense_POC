@@ -1,19 +1,16 @@
-# 🎬 Movies dataset template
+# BurnoutSense
 
-A simple Streamlit app showing movie data from [The Movie Database (TMDB)](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata). 
+Multilingual work-burnout expression classifier (English, Bahasa Malaysia, Manglish).
+MSc Data Science, UiTM.
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://movies-dataset-template.streamlit.app/)
+Classifies text into three MBI dimensions: Emotional Exhaustion,
+Depersonalisation, and Reduced Personal Accomplishment.
 
-### How to run it on your own machine
+Model: TF-IDF (5,000 features, unigram+bigram) + MLP (256 hidden units).
+Test weighted F1 0.9626, macro F1 0.9540.
 
-1. Install the requirements
+Research prototype. Not a diagnostic tool.
 
-   ```
-   $ pip install -r requirements.txt
-   ```
-
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+## Run locally
+pip install -r requirements.txt
+streamlit run app.py
